@@ -20,8 +20,6 @@
             bodyBuilder.RemoveWings(2);
 
             Console.WriteLine(bodyBuilder);
-
-            Console.ReadKey();
         }
     }
 

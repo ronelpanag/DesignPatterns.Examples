@@ -1,5 +1,6 @@
 # Notes that I took from this learning path
-_This repo plans to serve as a cheatsheet or a notebook with practical examples that explain the use of design patterns in software development._
+_This repo plans to serve as a cheatsheet or a notebook with practical examples that explain the use of design patterns in software development. Some of those examples are created by myself, others by Dmitri Nesteruk in his [Design Patterns in C# and .NET course](Design Patterns in C# and .NET
+)_
 
 I'm using C# console applications with __.NET 8.0__
 
@@ -21,3 +22,9 @@ Design patterns can be categorized into three main types:
 
 Some objects are simple and can be created in a single constructor call. This pattern makes easy and productive the construction of any object, specially when you need a lot of arguments to create that object.
 
+There are several ways to implement this pattern. You can use:
+- Basic builder implementation
+- Fluent builder. e. g.: when you create a request using Flurl `var request = _baseUrl.AppendPathSegment("/example).WithHeader("x-api-version", "1.0").GetStringAsync();`. You can see an example with recursive generics at Creational/FluentBuilderWithGenerics.cs
+- Stepwise builder
+- Functional builder
+- Faceted Builder
